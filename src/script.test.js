@@ -1,4 +1,4 @@
-import { capitalize } from './script.js';
+// import { capitalize } from './script.js';
 
-console.log(capitalize(5));
+// console.log(capitalize(5));
 
