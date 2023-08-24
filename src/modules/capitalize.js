@@ -1,5 +1,7 @@
-const capitalize = (word) => {
-    return word;
+const capitalize = (word = 'hello') => {
+    let firstLetter = word.replace(/\s/g, '').charAt(0).toUpperCase();
+    let remainingLetters = word.slice(1);
+    return firstLetter + remainingLetters;
 };
 
-export { capitalize };
+module.exports = capitalize;
