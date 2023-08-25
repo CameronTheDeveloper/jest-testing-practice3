@@ -15,3 +15,11 @@ test('Shift single letter by 0', () => {
 test('Shift entire word by 1', () => {
     expect(caesarCipher('abcfgw', 1)).toBe('bcdghx');
 });
+
+test('Shift capital single capital letter', () => {
+    expect(caesarCipher('A', 2)).toBe('C');
+});
+
+test('Shift word with capital and lower case letters', () => {
+    expect(caesarCipher('AcBe', 2)).toBe('CeDg');
+});
