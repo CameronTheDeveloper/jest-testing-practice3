@@ -2,7 +2,7 @@ const arObject = () => {
     return {
         getAverage(ar) {
             let average = 0.0;
-            for (let i = 0; i <= ar.length; i++) {
+            for (let i = 0; i < ar.length; i++) {
                 average += ar[i];
             }
             average /= ar.length;
