@@ -8,6 +8,11 @@ test('Shift single letter \'a\' to letter \'z\'', () => {
     expect(caesarCipher('a', 25)).toBe('z');
 });
 
+test('Wrap back to \'a\' after \'z\'', () => {
+    expect(caesarCipher('z', 5)).toBe('e');
+    ;
+});
+
 test('Shift single letter by 0', () => {
     expect(caesarCipher('c', 0)).toBe('c');
 });
