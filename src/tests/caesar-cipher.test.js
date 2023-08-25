@@ -28,3 +28,7 @@ test('Shift capital single capital letter', () => {
 test('Shift word with capital and lower case letters', () => {
     expect(caesarCipher('AcBe', 2)).toBe('CeDg');
 });
+
+test('Shift word with punctuation', () => {
+    expect(caesarCipher(',AzB,!d&', 4)).toBe(',EdF,!h&');
+});
