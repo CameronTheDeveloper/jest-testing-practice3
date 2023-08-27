@@ -25,3 +25,11 @@ test('Sort an array with 2 numbers', () => {
 test('Sort an array with 1 number', () => {
     expect(testAr.mergeSort([5])).toEqual([5]);
 });
+
+test('Get smallest number of array', () => {
+    expect(testAr.getMin([110, 5, 2, 25, 1, 3, 205, 9, 0, 8, 105])).toEqual(0);
+});
+
+test('Get largest number of array', () => {
+    expect(testAr.getMax([110, 5, 2, 25, 1, 3, 205, 9, 0, 8, 105])).toEqual(205);
+});

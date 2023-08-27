@@ -36,10 +36,13 @@ const arObject = () => {
             return sortedAr;
         },
         getMin(ar) {
+            const sortedAr = this.mergeSort(ar);
+            return sortedAr[0];
 
         },
         getMax(ar) {
-
+            const sortedAr = this.mergeSort(ar);
+            return sortedAr[sortedAr.length - 1];
         },
     };
 };
