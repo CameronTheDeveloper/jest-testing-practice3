@@ -32,7 +32,7 @@ const arObject = () => {
             const sortedFirstHalf = this.mergeSort(firstHalf);
             const sortedSecondHalf = this.mergeSort(secondHalf);
 
-            sortedAr = merge(sortedFirstHalf, sortedSecondHalf);
+            const sortedAr = merge(sortedFirstHalf, sortedSecondHalf);
             return sortedAr;
         },
         getMin(ar) {
@@ -67,9 +67,5 @@ const analyzeAr = (ar) => {
     let newAr = arObject(ar);
     return newAr;
 };
-
-const newObj = arObject();
-
-console.log(newObj.mergeSort([5, 2, 25, 1, 3, 9, 0, 8]));
 
 module.exports = analyzeAr;
